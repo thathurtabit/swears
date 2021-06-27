@@ -17,7 +17,9 @@ export const cleanUpSwearyString = (
   const arrayToClean = stringToClean.split(" ");
 
   const cleanedArray = arrayToClean.map((word: string) =>
-    swearWords.some((swear: string) => word.includes(swear))
+    swearWords.some((swear: string) =>
+      word.toUpperCase().includes(swear.toUpperCase())
+    )
       ? wordToUseInstead
       : word
   );
