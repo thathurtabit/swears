@@ -7,7 +7,12 @@ const swearWordsArray = swearWordsString
 
 try {
   fs.writeFileSync("src/swears.json", JSON.stringify(swearWordsArray));
-  console.log("Swears written to 'src/swears.json'");
+  console.log("SwearsJSON written to 'src/swears.json'");
+  if (!fs.existsSync("./dist")) {
+    fs.mkdirSync("./dist");
+  }
+  fs.copyFileSync("src/swears.json", "dist/swears.json");
+  console.log("Copied 'src/swears.json' to 'dist/swears.json'");
 } catch (err) {
   console.error(err);
 }

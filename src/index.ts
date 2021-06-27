@@ -1,7 +1,7 @@
 const swearsJson = require("./swears.json");
 
 /** Array: get list of swear words. **/
-export const swears: string[] = swearsJson;
+export const swearWords: string[] = swearsJson;
 
 /** Function: replace swear words with a clean word instead.
 
@@ -17,7 +17,7 @@ export const cleanUpSwearyString = (
   const arrayToClean = stringToClean.split(" ");
 
   const cleanedArray = arrayToClean.map((word: string) =>
-    swears.some((swear: string) => word.includes(swear))
+    swearWords.some((swear: string) => word.includes(swear))
       ? wordToUseInstead
       : word
   );

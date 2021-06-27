@@ -5,7 +5,7 @@ _Note: This package already includes TypeScript types - no need to go find them.
 
 A basic package that includes:
 
-* `swears`: string[] - An array of swear words taken from Google's big ol' list.
+* `swearWords`: string[] - An array of swear words taken from Google's big ol' list.
 * `cleanUpSwearyString`: Function - basic helper function (defintely not very performant) that takes in a string and replaces any rude words with something clean.
 
 ## Install
@@ -23,14 +23,16 @@ yarn add swears
 ## Import
 
 ```javascript
-import { swears, cleanUpSwearyString } from "@swears/utils"
+import { swearWords, cleanUpSwearyString } from "swears"
 ```
 
 ## Usage
 ```javascript
-swears
+swearWords
 // Gives you: ["list", "of", "rude", "words"]
+```
 
+```javascript
 cleanUpSwearyString("What a lovely ****")
 // Gives you: "What a lovely fluff"
-
+```
