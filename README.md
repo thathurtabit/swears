@@ -1,3 +1,36 @@
-# Swear Word List
+# Swears
+_Note: This package already includes TypeScript types - no need to go find them._
 
-Gives an array of swear words taken from Google's big ol' list (includes Typescript types)
+## What is this?
+
+A basic package that includes:
+
+* `swears`: string[] - An array of swear words taken from Google's big ol' list.
+* `cleanUpSwearyString`: Function - basic helper function (defintely not very performant) that takes in a string and replaces any rude words with something clean.
+
+## Install
+
+With npm:
+```console
+npm i swears
+```
+
+With yarn:
+```console
+yarn add swears
+```
+
+## Import
+
+```javascript
+import { swears, cleanUpSwearyString } from "@swears/utils"
+```
+
+## Usage
+```javascript
+swears
+// Gives you: ["list", "of", "rude", "words"]
+
+cleanUpSwearyString("What a lovely ****")
+// Gives you: "What a lovely fluff"
+
