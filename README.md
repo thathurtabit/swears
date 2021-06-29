@@ -25,14 +25,32 @@ yarn add swears
 ```javascript
 import { swearWords, cleanUpSwearyString } from "swears"
 ```
-
 ## Usage
-```javascript
-swearWords
-// Gives you: ["list", "of", "rude", "words"]
-```
+
+### `swearWords` - array of swears
 
 ```javascript
-cleanUpSwearyString("What a lovely ****")
-// Gives you: "What a lovely fluff"
+import { swearWords } from "swears"
+
+swearWords // ["list", "of", "rude", "words"]
 ```
+
+### `cleanUpSwearyString` - replace swear words from a string
+__Note:__ this helper function uses loops and RegEx which comes at a performance cost, so use sparingly.
+
+
+```javascript
+import { cleanUpSwearyString } from "swears"
+
+// Default usage
+cleanUpSwearyString("You son of a bitch")
+//  Result: "You son of a ****"
+
+// Pass optional `wordToUseInstead`
+cleanUpSwearyString("You son of a bitch", { wordToUseInstead: "fluff" })
+// Result: "You son of a fluff"
+```
+
+## Notes
+
+Beware the [Sunthorpe Problem](https://en.wikipedia.org/wiki/Scunthorpe_problem).
