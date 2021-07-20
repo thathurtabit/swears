@@ -44,7 +44,7 @@ import { cleanUpSwearyString } from "swears"
 
 // Default usage
 cleanUpSwearyString("You son of a bitch")
-//  Result: "You son of a ****"
+//  Result: "You son of a *****"
 
 // Pass optional `wordToUseInstead`
 cleanUpSwearyString("You son of a bitch", { wordToUseInstead: "fluff" })
