@@ -32,7 +32,7 @@ import { swearWords, cleanUpSwearyString } from "swears"
 ```javascript
 import { swearWords } from "swears"
 
-swearWords // ["list", "of", "rude", "words"]
+swearWords // ["list", "of", "swear", "words"]
 ```
 
 ### `cleanUpSwearyString` - replace swear words from a string
@@ -53,4 +53,4 @@ cleanUpSwearyString("You son of a bitch", { wordToUseInstead: "fluff" })
 
 ## Notes
 
-Beware the [Sunthorpe Problem](https://en.wikipedia.org/wiki/Scunthorpe_problem).
+Beware the [S****horpe Problem](https://en.wikipedia.org/wiki/Scunthorpe_problem).
