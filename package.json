@@ -1,13 +1,13 @@
 {
   "name": "swears",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Gives an array of swear words, and a helper function to remove them. Taken from Google's big ol' list (includes Typescript types)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "convert": "ts-node src/convertFromTxt.ts",
     "compile": "tsc",
-    "prepublishOnly": "npm run test:no-watch && npm run compile",
+    "prepublishOnly": "npm run convert && npm run compile && npm run test:no-watch && npm run compile",
     "test": "jest --watch",
     "test:no-watch": "jest"
   },
