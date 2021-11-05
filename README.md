@@ -1,3 +1,5 @@
+[![Tests Passing](https://github.com/thathurtabit/swears/actions/workflows/run-tests.yml/badge.svg)](https://github.com/thathurtabit/swears/actions/workflows/run-tests.yml)
+
 # Swears
 _Note: This package already includes TypeScript types - no need to go find them._
 
