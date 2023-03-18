@@ -1,6 +1,6 @@
 {
   "name": "swears",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Gives an array of swear words, and a helper function to remove them. Taken from Google's big ol' list (includes Typescript types)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
