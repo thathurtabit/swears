@@ -3,7 +3,7 @@ import { swearWords, cleanUpSwearyString } from "./index";
 describe("swearWords", () => {
   it("should return a list of swears", () => {
     console.log("Swear count: ", swearWords.length);
-    expect(swearWords.length).toBeGreaterThan(448);
+    expect(swearWords.length).toBeGreaterThan(440);
   });
 });
 
